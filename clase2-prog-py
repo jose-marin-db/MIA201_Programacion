@@ -1,0 +1,11 @@
+import csv
+precios = {}
+es_encabezado = True
+with open('./productos.csv', 'r') as f:
+    for line in f:
+        if es_encabezado:
+            es_encabezado = False
+        else:
+            row = line.split(',')
+            precios[row[0]] = float(row[3])
+print(precios["Regla"])
