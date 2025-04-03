@@ -1,0 +1,84 @@
+Corrección de la entrega:
+
+['San Miguel', 'San Fernando', 'Rosario', 'Bogotá']
+1
+{'luno': 2, 'dos': 1}
+1
+[0, 0, 0, -1, 1, 1, 1, 1, -1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1, 1]
+EEE..EEEE.....
+======================================================================
+ERROR: test_basico (tests.test_semana_02.TestCollatz)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/mlopez/.local/lib/python3.10/site-packages/timeout_decorator/timeout_decorator.py", line 82, in new_function
+    return function(*args, **kwargs)
+  File "/home/mlopez/git/homework-checker/01_getting_data/tests/test_semana_02.py", line 32, in test_basico
+    self.assertEqual(semana_02.collatz(1), 0)
+AttributeError: module 'semana_02' has no attribute 'collatz'
+
+======================================================================
+ERROR: test_numeros_grandes (tests.test_semana_02.TestCollatz)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/mlopez/.local/lib/python3.10/site-packages/timeout_decorator/timeout_decorator.py", line 82, in new_function
+    return function(*args, **kwargs)
+  File "/home/mlopez/git/homework-checker/01_getting_data/tests/test_semana_02.py", line 38, in test_numeros_grandes
+    self.assertEqual(semana_02.collatz(27), 111)  # Número famoso en la conjetura
+AttributeError: module 'semana_02' has no attribute 'collatz'
+
+======================================================================
+ERROR: test_potencias_de_dos (tests.test_semana_02.TestCollatz)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/mlopez/.local/lib/python3.10/site-packages/timeout_decorator/timeout_decorator.py", line 82, in new_function
+    return function(*args, **kwargs)
+  File "/home/mlopez/git/homework-checker/01_getting_data/tests/test_semana_02.py", line 43, in test_potencias_de_dos
+    self.assertEqual(semana_02.collatz(16), 4)
+AttributeError: module 'semana_02' has no attribute 'collatz'
+
+======================================================================
+ERROR: test_lista_vacia (tests.test_semana_02.TestInvertirLista)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/mlopez/.local/lib/python3.10/site-packages/timeout_decorator/timeout_decorator.py", line 82, in new_function
+    return function(*args, **kwargs)
+  File "/home/mlopez/git/homework-checker/01_getting_data/tests/test_semana_02.py", line 22, in test_lista_vacia
+    self.assertEqual(semana_02.invertir_lista([]), [])
+AttributeError: module 'semana_02' has no attribute 'invertir_lista'
+
+======================================================================
+ERROR: test_numeros (tests.test_semana_02.TestInvertirLista)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/mlopez/.local/lib/python3.10/site-packages/timeout_decorator/timeout_decorator.py", line 82, in new_function
+    return function(*args, **kwargs)
+  File "/home/mlopez/git/homework-checker/01_getting_data/tests/test_semana_02.py", line 13, in test_numeros
+    self.assertEqual(semana_02.invertir_lista([1, 2, 3, 4, 5]), [5, 4, 3, 2, 1])
+AttributeError: module 'semana_02' has no attribute 'invertir_lista'
+
+======================================================================
+ERROR: test_strings (tests.test_semana_02.TestInvertirLista)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/mlopez/.local/lib/python3.10/site-packages/timeout_decorator/timeout_decorator.py", line 82, in new_function
+    return function(*args, **kwargs)
+  File "/home/mlopez/git/homework-checker/01_getting_data/tests/test_semana_02.py", line 17, in test_strings
+    self.assertEqual(semana_02.invertir_lista(["Bogotá", "Rosario", "San Fernando", "San Miguel"]),
+AttributeError: module 'semana_02' has no attribute 'invertir_lista'
+
+======================================================================
+ERROR: test_un_elemento (tests.test_semana_02.TestInvertirLista)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/mlopez/.local/lib/python3.10/site-packages/timeout_decorator/timeout_decorator.py", line 82, in new_function
+    return function(*args, **kwargs)
+  File "/home/mlopez/git/homework-checker/01_getting_data/tests/test_semana_02.py", line 26, in test_un_elemento
+    self.assertEqual(semana_02.invertir_lista([42]), [42])
+AttributeError: module 'semana_02' has no attribute 'invertir_lista'
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.002s
+
+FAILED (errors=7)
+
