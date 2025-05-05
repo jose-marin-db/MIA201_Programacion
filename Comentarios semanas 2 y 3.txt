@@ -1,0 +1,13 @@
+SEMANA 02
+
+Los nombres de las funciones deben ser tal cual lo solicitado y las entregas no deberían incluir las pruebas intercaladas con el código.
+collatz en minúscula, no Collatz
+invertir_lista, no invertirLista, etc
+Por otro lado, si n = 1, collatz debería devolver 0. En la implementación hay que modificar algunos valores y el orden en que se corta la recursión para garantizar que se devuelva el valor correcto para cubrir ese caso y los de otros valores (sin romper los tests que funcionaban)
+
+SEMANA 03
+
+La función incompleto debería ser album_incompleto
+La función cuantos_paquetes debería devolver algo de tipo int, la división hace que devuelva algo de tipo float. La función int(f) puede servirte. 
+Ejs 
+int(8.6) será 8 y 4/2 es 2.0 pero int(4/2) será 2
